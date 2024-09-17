@@ -100,7 +100,7 @@ const Cart = () => {
                 </option>
 
 
-                ))]}
+                ))}
 
             </select>
 
