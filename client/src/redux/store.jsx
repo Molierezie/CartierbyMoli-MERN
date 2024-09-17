@@ -4,7 +4,6 @@ import authReducer from "./features/auth/authSlice";
 import favoriteReducer from "./features/favorites/favoriteSlice";
 // import cartReducer from "./features/cart/cartSlice";
 import cartItemSliceReducer from "./features/cart/cartSlice";
-import shopReducer from "./features/shop/shopSlice";
 import { getFavoriteFromLocalStorage } from "@/utils/localStorage";
 import { setupListeners } from "@reduxjs/toolkit/query/react";
 
@@ -24,7 +23,7 @@ const store = configureStore({
         favorites : favoriteReducer,
         // cart : cartReducer,
         cartItem : cartItemSliceReducer,
-        shop : shopReducer
+        
 
     },
 
