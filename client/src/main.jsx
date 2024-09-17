@@ -6,8 +6,8 @@ import './index.css'
 
 import React, { Suspense } from 'react'
 
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+// import 'core-js/stable';
+// import 'regenerator-runtime/runtime';
 
 
 
