@@ -18,8 +18,8 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 
 
-import { disableReactDevTools } from '@fvilers/disable-react-devtools';
-if(process.env.NODE_ENV === 'production') disableReactDevTools()
+// import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+// if(process.env.NODE_ENV === 'production') disableReactDevTools()
 
 
 
@@ -117,10 +117,6 @@ const ProductUpdate = React.lazy(() => import('./pages/Admin/ProductUpdate.jsx')
 
 
 
-
-import Test1 from './pages/Test1.jsx'
-import Test2 from './pages/Test2.jsx'
-import Test1Path from './pages/Test1Path.jsx'
 
 
 

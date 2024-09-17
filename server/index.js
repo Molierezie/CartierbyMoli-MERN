@@ -14,9 +14,7 @@ import cookieParser from "cookie-parser";
 import userRoute from "./routes/userRoutes.js";
 import categoryRoute from "./routes/categoryRoutes.js";
 import productRoute from "./routes/productRoutes.js";
-import orderRoute from "./routes/orderRoute.js";
-import uploadRoutes from "./routes/uploadRoutes.js";
-// import testRoute from "./controllers/testUserController.js"
+
 
 // Connection DB
 import connectDB from "./config/db.js";
@@ -60,15 +58,12 @@ app.use(cookieParser())
 app.use("/api/users", userRoute);
 app.use("/api/category", categoryRoute);
 app.use("/api/product", productRoute);
-app.use("/api/order", orderRoute);
-app.use("/api/upload", uploadRoutes);
-// app.use("/api/test", testRoute);
+
 
 
 
 
 const __dirname = path.resolve();
-app.use("/uploads", express.static(path.join(__dirname + "/uploads")));
 
 
 if(ENV_VARS.NODE_ENV === "production"){

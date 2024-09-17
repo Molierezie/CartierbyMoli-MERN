@@ -9,9 +9,7 @@ export default defineConfig({
     proxy : {
 
       "/api" : "http://localhost:5500", 
-      // "/api" : "https://cartierByMoli-api.onrender.com",
-      "/upload" : "http://localhost:5500",
-      // "/upload" : "https://cartierByMoli-api.onrender.com",
+
     },
 
     historyApiFallback: true
