@@ -352,7 +352,7 @@ console.log(category);
          
         {/* <article  className="bg-white w-[80%] h-[8vh] sm:hidden lg:flex justify-center gap-[10rem] items-center uppercase  sm:text-[1.2rem] lg:text-[1.4rem] border-b-2 border-black"> */}
             
-        <article  className="bg-white w-[60%] h-[8vh] sm:hidden lg:flex justify-center lg:gap-[2rem] xl:gap[7rem]  items-center uppercase  sm:text-[1rem]  border-b-4 border-black">
+        <article  className="bg-white w-[75%] h-[8vh] sm:hidden lg:flex justify-center lg:gap-[2rem] xl:gap[7rem]  items-center uppercase  sm:text-[1rem]  border-b-4 border-black">
 
 
             <div className="ml-5">
