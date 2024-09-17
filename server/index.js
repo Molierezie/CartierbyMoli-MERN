@@ -49,11 +49,11 @@ cloudinary.config({
 const app = express();
 
 
-app.use(express.json())
-app.use(express.urlencoded({extended : true}));
+app.use(express.json()) // parse the req.body
+app.use(express.urlencoded({extended : true})); // parse the form date from front-end, we also use express-formidable middleware
 app.use(cookieParser())
 
-// app.use(formidableMiddleware());
+
 
 app.use("/api/users", userRoute);
 app.use("/api/category", categoryRoute);
