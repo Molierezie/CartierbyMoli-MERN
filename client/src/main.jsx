@@ -226,7 +226,8 @@ const router = createBrowserRouter(
         <Route path='LOVE' element={<Suspense fallback={<div>Loading...</div>}><LoveBrand /></Suspense>} />
         <Route path='SANTOS' element={<Suspense fallback={<div>Loading...</div>}><SantosBrand /></Suspense>} />
         <Route path='C-DE-CARTIER' element={<Suspense fallback={<div>Loading...</div>}><CdeCartierBrand /></Suspense>} />
-        
+        <Route path='PANTHERE-DE-CARTIER' element={<Suspense fallback={<div>Loading...</div>}><PanthereDeCartierBrand /></Suspense>} />
+       
         <Route path="*" element={<Suspense fallback={<div>Loading...</div>}><Page404 /></Suspense>} />
   
         <Route path='user' element={<Suspense fallback={<div>Loading...</div>}><PrivateRoute /></Suspense>}>

@@ -415,6 +415,7 @@ console.log(category);
             <p className="hover:border-b-4 border-black border-6 transition-all">C DE CARTIER</p>
             </Link>
 
+         
             <Link to='PANTHERE-DE-CARTIER'>
             <p className="hover:border-b-4 border-black border-6 transition-all">PANTHERE DE CARTIER</p>
             </Link>
