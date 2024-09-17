@@ -76,3 +76,18 @@ package-lock-.json
 package.json
 
 If I'm in the home page what's the path for access to the image1 ?
+
+
+## Git & GitHub
+
+### When I try to push
+
+Error :
+RPC failed; HTTP 400 curl 22 The requested URL returned error: 400 Bad Request
+
+Problem :
+Solved it for me - this was due to pushing a few large images 
+
+response
+
+    - 📖 [Stack Over Flow](https://stackoverflow.com/questions/62753648/rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-bad-request)
