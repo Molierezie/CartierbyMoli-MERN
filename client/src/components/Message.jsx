@@ -1,3 +1,4 @@
+import React from 'react'
 const Message = ({ variant, children }) => {
     const getVariantClass = () => {
       switch (variant) {

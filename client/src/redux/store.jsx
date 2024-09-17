@@ -26,7 +26,7 @@ const store = configureStore({
         
 
     },
-    
+
     preloadedState : { favorites : initialFavorites},
 
     // the middleware take the apiSlice middlware (the middleware for RTQ Query) why ?
@@ -35,7 +35,7 @@ const store = configureStore({
     // devTools : true, Before deployment
     
     // For see the changes in the store like a console
-    devTools : true
+    // devTools : true
 })
 
 setupListeners(store.dispatch);

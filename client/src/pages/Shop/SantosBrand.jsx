@@ -1,4 +1,4 @@
-
+import React from 'react'
 
 // ----------- Hook provide by react-router-dom -----------
 import {useLocation } from 'react-router-dom'
@@ -14,7 +14,7 @@ import Shop from '../../components/Shop'
 // --------------- Style & Animation  ---------------
 
 // ----------Image
-import imgSantosBrand from '@public/assets/SantosBrand.png'
+import imgSantosBrand from '@/assets/SantosBrand.png'
 
 
 

@@ -19,7 +19,7 @@ import Shop from '../../components/Shop'
 
 // ----------Image
 
-import imgCdeCartierBrand from '@public/assets/CdeCartierBrand.png'
+import imgCdeCartierBrand from '/assets/CdeCartierBrand.png'
 
 const CdeCartierBrand = () => {
 

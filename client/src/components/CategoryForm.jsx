@@ -1,4 +1,4 @@
-
+import React from 'react'
 // here we use a component outside the page category for more readable code
 
 // we use the form for handle at the same time creation , update and delete

@@ -1,3 +1,4 @@
+import React from 'react'
 
  // ----------- Hook provide by react-router-dom -----------
 import {useLocation} from 'react-router-dom'
@@ -14,7 +15,7 @@ import Shop from '../../components/Shop'
 // --------------- Style & Animation  ---------------
 
 // ----------Image
-import imgTrinityBrand from '@public/assets/TrinityBrand.png'
+import imgTrinityBrand from '/assets/TrinityBrand.png'
 
 const TrinityBrand = () => {
 

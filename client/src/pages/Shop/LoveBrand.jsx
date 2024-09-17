@@ -1,3 +1,5 @@
+import React from 'react'
+
 // ----------- Hook provide by react-router-dom -----------
 import {useLocation } from 'react-router-dom'
 
@@ -13,7 +15,7 @@ import GoBackHome from '../../components/GoBackHome'
 // --------------- Style & Animation  ---------------
 
 // ----------Image
-import imgLoveBrand from '@public/assets/LoveBrand.png'
+import imgLoveBrand from '/assets/LoveBrand.png'
 
 
 const LoveBrand = () => {

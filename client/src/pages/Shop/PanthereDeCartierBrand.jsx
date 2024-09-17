@@ -1,4 +1,4 @@
-
+import React from 'react'
 
 // ----------- Hook provide by react-router-dom -----------
 import { useLocation } from 'react-router-dom'
@@ -14,7 +14,7 @@ import Shop from '../../components/Shop'
 // --------------- Style & Animation  ---------------
 
 // ----------Image
-import imgPanthereDeCartierBrand from '@public/assets/PanthereDeCartierBrand.png'
+import imgPanthereDeCartierBrand from '@/assets/PanthereDeCartierBrand.png'
 
 const PanthereDeCartierBrand = () => {
 
