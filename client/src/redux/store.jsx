@@ -26,7 +26,7 @@ const store = configureStore({
         
 
     },
-
+    
     preloadedState : { favorites : initialFavorites},
 
     // the middleware take the apiSlice middlware (the middleware for RTQ Query) why ?
