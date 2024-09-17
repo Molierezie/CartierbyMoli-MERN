@@ -89,7 +89,7 @@ const Cart = () => {
 
             onChange={(e)=>handleCartQty(item, Number(e.target.value))}
             >
-                { [...Array(item.countInStock).keys().map((x)=>(
+                { [...Array(item.countInStock)].keys().map((x)=>(
 
                 <option
                 disabled={item.countInStock === 0}
