@@ -8,10 +8,10 @@ export default defineConfig({
   plugins: [
     react({
 
-      // babel: {
-      //   presets: ['@babel/preset-env'],
-      //   plugins: ['@babel/plugin-transform-runtime']
-      // }
+      babel: {
+        presets: ['@babel/preset-env'],
+        plugins: ['@babel/plugin-transform-runtime']
+      }
     })
   ],
 
