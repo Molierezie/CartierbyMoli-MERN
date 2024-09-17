@@ -209,7 +209,7 @@ const ProductDetails = ()=>{
                                         onChange={(e) => setQuantity(e.target.value)}
                                         className="p-2 w-[6rem] rounded-lg text-black"
                                         >
-                                        {[...Array(products.countInStock).keys()].map((x) => (
+                                        {[...Array(products.countInStock)].keys().map((x) => (
                                             <option key={x + 1} value={x + 1}>
                                             {x + 1}
                                             </option>
