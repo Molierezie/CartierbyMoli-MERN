@@ -34,7 +34,8 @@ export default {
       'auto-fit' : 'repeat(auto-fit, minmax(300px, 1fr))',
       'grid-col-nav' : 'repeat(3, 1fr)',
       'grid-col-footer' : 'repeat(4, 1fr)',
-      'grid-test' : 'repeat(auto-fit , minmax(300px,1fr))',
+      'grid-shopMD' : 'repeat(auto-fit , minmax(200px,1fr))',
+      'grid-shopSM' : 'repeat(auto-fit , minmax(150px,1fr))',
       'grid-product-detail' : 'repeat(auto-fit , minmax(400px,1fr))'
       
     },
