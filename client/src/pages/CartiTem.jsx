@@ -114,14 +114,14 @@ const Cart = () => {
 
             <div className='flex justify-around items-center gap-x-2 lg:gap-x-20'>
 
-                <p className='text-[1rem] max-w-[20vw]'>{item.name}</p>
+                <p className='sm:text-[0.8rem] text-[1rem] max-w-[20vw]'>{item.name}</p>
               
 
 
-                <div className='bg-blue-500 flex justify-center items-center'>
+                <div className='flex justify-center items-center'>
 
                     <Select
-                    className='sm:h-[1.5rem w-[5vw] md:w-[15vw]'
+                    className='sm:h-[1.5rem w-[20vw] md:w-[15vw]'
                     onChange={(e)=>handleCartQty(item, Number(e.value))}
                     options={options}
                     defaultInputValue={item.quantity}
@@ -137,8 +137,8 @@ const Cart = () => {
             </div>
 
             </div>
-            <p className='text-[0.8rem]'>Collection : {item.brand}</p>
-            <p className='text-[0.8rem] font-bold'>Prix un produit : {item.price?.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</p>
+            <p className='text-[0.7rem]'>Collection : {item.brand}</p>
+            <p className='text-[0.7rem] font-bold'>Prix un produit : {item.price?.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</p>
            
 
     
