@@ -2,13 +2,29 @@
 
 import React from 'react'
 
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+
+// ----------- Hook provide by react-router-dom -----------
+import { useNavigate } from 'react-router-dom'
+
+
+// --------------- Reusable Component  ---------------
 import GoBackHome from '@/components/GoBackHome';
 
+// --------------- function provide By Redux for the store and reducer  ---------------
 import { useSelector, useDispatch } from 'react-redux'
 
+
+// --------------- Export function from cartSlice  ---------------
 import { addToCart, removeFromCart } from '../redux/features/cart/cartSlice'
+
+
+// --------------- Style & Animation  ---------------
+
+// React-Icons
 import { FaTrash } from "react-icons/fa";
+
+// ---------- Select
+import Select from 'react-select'
 
 const Cart = () => {
 
@@ -35,6 +51,8 @@ const Cart = () => {
         dispatch(addToCart({...product, quantity}))
     }
 
+
+    // here I take the specific Id to the user for the delete
     const handleRemoveCart = (id)=>{
 
 
@@ -47,9 +65,28 @@ const Cart = () => {
     }
 
     const checkoutHandler = () => {
-        navigate("/login?redirect=/user/shipping");
+        navigate("/login");
       };
+
+
+
     
+      const options =  [
+            
+        { value : 0 , label : 0 },
+         { value : 1 , label : 1 },
+         { value : 2 , label : 2 },
+         { value : 3 , label : 3 },
+         { value : 4 , label : 4 },
+         { value : 5 , label : 5 },
+         { value : 6 , label : 6 },
+         { value : 7 , label : 7 },
+         { value : 8 , label : 8},
+         { value : 9 , label : 9},
+         { value : 10 , label : 10},
+         { value : 11 , label : 11},
+
+    ]
     
   
 
@@ -82,27 +119,18 @@ const Cart = () => {
 
 
                 <div className='bg-blue-500 flex justify-center items-center'>
-                <select
-            className='sm:h-[1.5rem w-[5vw] md:w-[15vw]'
-            value={item.quantity}
+
+                    <Select
+                    className='sm:h-[1.5rem w-[5vw] md:w-[15vw]'
+                    onChange={(e)=>handleCartQty(item, Number(e.value))}
+                    options={options}
+                    defaultInputValue={item.quantity}
+                    
+                    />
 
 
-            onChange={(e)=>handleCartQty(item, Number(e.target.value))}
-            >
-                { [...Array(item.countInStock)].keys().map((x)=>(
-
-                <option
-                disabled={item.countInStock === 0}
-                key={x + 1}
-                value={x + 1}
-                >
-                    {x + 1}
-                </option>
-
-
-                ))}
-
-            </select>
+                
+       
 
             <FaTrash size={30} onClick={()=>handleRemoveCart(item._id)}/>
 
@@ -110,7 +138,7 @@ const Cart = () => {
 
             </div>
             <p className='text-[0.8rem]'>Collection : {item.brand}</p>
-            <p className='text-[0.8rem] font-bold'>Prix un produit : {item.price.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</p>
+            <p className='text-[0.8rem] font-bold'>Prix un produit : {item.price?.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</p>
            
 
     

@@ -6,10 +6,6 @@ import './index.css'
 
 import React, { Suspense } from 'react'
 
-// import 'core-js/stable';
-// import 'regenerator-runtime/runtime';
-
-
 
 // ----------- Hook provide by react-router-dom -----------
 

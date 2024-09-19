@@ -2,7 +2,9 @@
 import React from 'react'
 
 // ----------- Hook provide by React -----------
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import Select from 'react-select';
+
 
 // ----------- Hook provide by react-router-dom -----------
 import { useParams , useNavigate} from 'react-router-dom'
@@ -40,6 +42,11 @@ const ProductDetails = ()=>{
     const { userInfo } = useSelector((state)=>state.auth)
 
 
+    // const refValue = useRef(null)
+
+
+    // console.log(refValue.current.value);
+    
 
     // We set the state for the review
     const [quantity, setQuantity] = useState(1)
@@ -65,8 +72,46 @@ const ProductDetails = ()=>{
     if(isLoading || isLoadingReview) return `Loading...`
     if(isError) return `Error`
 
-    console.log(products)
 
+
+
+
+        
+
+        const options =  [
+            
+            { value : 0 , label : 0 },
+             { value : 1 , label : 1 },
+             { value : 2 , label : 2 },
+             { value : 3 , label : 3 },
+             { value : 4 , label : 4 },
+             { value : 5 , label : 5 },
+             { value : 6 , label : 6 },
+             { value : 7 , label : 7 },
+             { value : 8 , label : 8},
+             { value : 9 , label : 9},
+             { value : 10 , label : 10},
+             { value : 11 , label : 11},
+
+        ]
+
+        // console.log(options);
+        
+     
+        
+
+
+        // const customeStyle = {
+
+        //     controleState : (state)=>({
+
+        //         setQuantity(state.value)
+        //     })
+        // }
+
+        
+  
+    
 
 
     // we send the information for create product review with Api call
@@ -204,20 +249,31 @@ const ProductDetails = ()=>{
                              
                                 
                                     {products.countInStock > 0 && (
-                                    <div>
-                                        <select
-                                        value={quantity}
-                                        onChange={(e) => setQuantity(e.target.value)}
-                                        className="p-2 w-[6rem] rounded-lg text-black"
-                                        >
-                                        {[...Array(products.countInStock)].keys().map((x) => (
-                                            <option key={x + 1} value={x + 1}>
-                                            {x + 1}
-                                            </option>
-                                        ))}
-                                        </select>
-                                    </div>
+                                    // <div
+                                    // // onChange={(e) => setQuantity(e.target.value)}
+                                    // className='bg-green-600 h-[25vh] w-[20vw] flex justify-center items-center'
+                                    // >
+
+    
+
+                                    //     <div className='w-[80%] h-[50%] bg-slate-500'
+                                    //     >
+
+                                         <Select
+                                        onChange={(e) => setQuantity(e.value)}
+                                        defaultValue={quantity}
+                                        options={options}
+                                      
+                                    /> 
+                                    //     </div>
+
+
+                                        
+                                    // </div>
                                     )}
+
+
+                                  
 
 
                                 </div>

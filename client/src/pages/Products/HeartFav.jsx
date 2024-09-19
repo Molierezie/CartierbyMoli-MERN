@@ -36,7 +36,7 @@ const HeartFav = ({ product})=>{
     // We retrieve the favorites from the local storage
     const favorites = useSelector((state) => state.favorites) || []
 
-    console.log(favorites);
+    // console.log(favorites);
     
     // const isFavorite = favorites.some((p)=> p._id === product._id )
 
