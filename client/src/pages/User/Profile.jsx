@@ -76,10 +76,10 @@ const Profile = () => {
 }
 
   return (
-    <main className="h-[250vh] bg-blue-500 ">
+    <main className="bg-blue-500 mt-10 ">
 
 
-        <section className='sm:h-[140vh] bg-rose-200 flex flex-col justify-start items-center space-y-10 p-6 md:items-center'>
+        <section className='bg-red-700 flex flex-col justify-start items-center space-y-10 p-6 md:items-center'>
 
            <p
            to="/login"
