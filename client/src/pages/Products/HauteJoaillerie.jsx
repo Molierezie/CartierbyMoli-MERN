@@ -56,7 +56,7 @@ const HauteJoaillerie = () => {
 
         <p className="sm:font-bold uppercase sm:text-[0.9rem] md:text-[1.4rem] lg:text-[1.6rem]">Le voyage recommencé</p>
         <p className="sm:text-[0.8rem] md:text-[1rem]">Un voyage comme une traversée, où les savoir-faire et les registres créatifs de la Maison sont revus à la lumière d’un prisme nouveau..</p>
-        <button className="sm:text-[0.8rem] md:text-[1rem] border-b-2 border-black">Découvrir La nouvelle collection</button>
+        {/* <button className="sm:text-[0.8rem] md:text-[1rem] border-b-2 border-black">Découvrir La nouvelle collection</button> */}
 
 
     </div>
