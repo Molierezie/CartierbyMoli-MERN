@@ -3,7 +3,7 @@
 # Application E-commerce 
 (I use the free version of render. so If you close the page and we come-back later there will be 1 minute to loading… sorry)
 
-Preview image on the application
+Application preview image
 
 
 <img width="721" alt="Capture d’écran 2024-09-19 à 12 19 43" src="https://github.com/user-attachments/assets/219291a3-c6c6-48ef-931d-ccb233c1d36c">
