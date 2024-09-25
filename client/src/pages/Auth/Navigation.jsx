@@ -31,7 +31,7 @@ import {AiFillShopping } from "react-icons/ai";
 import { MdOutlinePlace, MdOutlineRoomService, MdOutlineDashboardCustomize } from "react-icons/md";
 import { PiUsersThree } from "react-icons/pi";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
-import { FaRegHeart, FaHeart } from "react-icons/fa";
+import { FaRegHeart, FaHeart, FaLongArrowAltRight } from "react-icons/fa";
 
 // ---------- Image for Sub menu Joaillerie  
 
@@ -197,7 +197,7 @@ console.log(category);
 
         <article className="lg:flex justify-center items-center row-[2/3] col-span-1">
 
-            <Link to=''  data-aos="fade-right" className="sm:text-[2rem] font-bold font-dancing md:text-[3.2rem] xl:text-[4rem]">CartierByMoli</Link>
+            <Link to=''  data-aos="fade-right" className="sm:text-[1.5rem] font-bold font-dancing md:text-[3.2rem] xl:text-[4rem]">CartierByMoli</Link>
            
 
         </article>
@@ -277,8 +277,8 @@ console.log(category);
                 
                 <Link onClick={logoutHandler} to=''  className="lg:flex flex-col justify-center items-center space-y-2">
                 
-                <IoMdLogOut size={32} className=""/>
-                <span className="text-[1rem] ">Déconnexion</span>
+                <IoMdLogOut className="sm:w-[6vw] h-[4vh]"/>
+                <span className="sm:text-[0.8rem] md:text-[1rem] ">Déconnexion</span>
                 </Link>
 
 
@@ -346,7 +346,7 @@ console.log(category);
 
 
 
-            <div className=" sm:hidden lg:flex flex flex-col justify-center items-center mt-[2rem]  row-[3/3] col-span-3 uppercase h-[15vh] sm:text-[1.2rem] lg:text-[1.4rem]">
+            <div className=" sm:hidden lg:flex flex flex-col justify-center items-center   row-[3/3] col-span-3 uppercase h-[15vh] sm:text-[1.2rem] lg:text-[1.4rem]">
                 
        
          
@@ -359,6 +359,8 @@ console.log(category);
             <p className="text-[1rem] w-[300px]">
                 Rechercher par Collection
             </p>
+
+            {/* <FaLongArrowAltRight size={40}/> */}
 
             </div>
 
@@ -439,7 +441,7 @@ console.log(category);
     
     {/* ------------ SIDEBAR ------------- */}
 
-    <div className={ showSideBar ? "overflow-scroll transition-all duration-[2s] fixed grid grid-rows-15 top-0 left-0 h-screen z-10 w-[50%] bg-white sm:w-[100%]": "fixed grid grid-rows-9 top-0 left-[-100%] h-screen z-10 md:w-[50%] bg-white sm:w-[100%]"}>
+    <div className={ showSideBar ? "overflow-scroll transition-all duration-[1s] fixed grid grid-rows-15 top-0 left-0 h-screen z-10 w-[50%] bg-white sm:w-[100%]": "fixed grid grid-rows-9 top-0 left-[-100%] h-screen z-10 md:w-[50%] bg-white sm:w-[100%]"}>
 
         <div className="flex justify-between items-center p-8">
 
