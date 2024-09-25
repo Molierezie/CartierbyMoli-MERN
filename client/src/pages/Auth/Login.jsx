@@ -70,6 +70,7 @@ const Login = () => {
 
     // Here we creat an message if in our API call there is an error or loading
     if(isLoadingLogin ) return <h1>Chargement ...</h1>
+    if(errorLogin ) return <h1>error ...</h1>
 
 
 
