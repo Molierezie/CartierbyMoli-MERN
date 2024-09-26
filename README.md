@@ -108,6 +108,7 @@ Why ?
 # State Management and handle Request from API 
 
 `RTQ Query`
+(I add the link of my complete note taking for RTK Query before saturday 28 sept)
 
 `📔 Ressource understand easly RTQ Query`
 - 🎥 [SAP developpers Ytb](https://www.youtube.com/watch?v=Wy8HWC2LSo0)
