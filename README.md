@@ -93,7 +93,14 @@ Why ?
 --
 
 - I use Tailwind CSS for the style and I love it especially for the media queries it’s very simple
-- For handle the box (the shop where there is the product) in this app I use lot of time subgrid, it’s a good alternative to flexbox more information here 
+- For handle the box (the shop where there is the product) in this app I use lot of time subgrid, it’s a good alternative to flexbox more information here
+
+- For example in the real website of Cartier in this section, the text isn't align
+  
+![subgridCartier1](https://github.com/user-attachments/assets/91c91b7c-0718-4a57-888e-1b92f8cac2f7)
+
+- we can solve this issue with subgrid, I explain in detail here -> [mNT - grid vs flex issue alignement](https://github.com/Molierezie/myNotesTakings-Lesson-Project/blob/main/3_Front-End-mNT/2_Style-Animation-ElementForApp/1_Style-CSS-Tailwind-StyledComponents/2_flex-grid.md#tailwind)
+
 - I use some of animation with react-scroll and react-multi-carousel
 
 ---
